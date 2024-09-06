@@ -1,4 +1,4 @@
-MediBridge: Where Innovation Bridges Healthcare Gaps!
+## MediBridge: Where Innovation Bridges Healthcare Gaps!
 
 # Overview
 MediBridge is a comprehensive hospital management system designed to enhance the efficiency and effectiveness of healthcare services. Developed in the HIT-A-THON organized by TaruGuardians, this project integrates advanced  diagnostic services to streamline hospital operations and improve patient care.
