@@ -1,5 +1,5 @@
 ### MediBridge: Where Innovation Bridges Healthcare Gaps!
-
+## Figma Prototype - https://www.figma.com/design/g7rH9lq1ldilQvo8AWYXCc/MEDIN-Hospital-system-(Community)?node-id=147-1780&m=dev&t=ba3YnVansHXSuuBj-1
 ## Team Name:- Bit Rebels
   Team Members:-
   1) Riya Singh
