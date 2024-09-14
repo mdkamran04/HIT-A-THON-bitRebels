@@ -51,7 +51,7 @@ const AboutUs = () => {
                             className="h-32 w-32 mx-auto rounded-full"
                         />
                         <h4 className="mt-4 text-xl font-semibold">Dr. Rahul Sharma</h4>
-                        <p className="text-gray-600">Orthopedics</p>
+                        <p className="text-gray-600">Orthopedic</p>
                     </div>
 
                     {/* Clinic Card 3 */}
