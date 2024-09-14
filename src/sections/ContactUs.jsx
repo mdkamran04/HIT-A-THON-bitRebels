@@ -1,5 +1,8 @@
 import React from "react";
 import MaxWidthContainer from "../components/mmw";
+import { Form } from "react-router-dom";
+import ContactForm from "../components/Form";
+import ContactFormNew from "../components/ContactFormNew";
 
 const ContactUs = () => {
   return (
@@ -14,102 +17,8 @@ const ContactUs = () => {
           {/* Main Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Form Section */}
-            <div className="bg-white p-6 shadow-lg rounded-lg">
-              <h2 className="text-xl font-bold mb-6">Book an Appointment</h2>
-              <p className="text-gray-600 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                placerat scelerisque turpis, nec fermentum.
-              </p>
-              <form>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    className="border p-2 rounded w-full"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Gender"
-                    className="border p-2 rounded w-full"
-                  />
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="border p-2 rounded w-full"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Phone"
-                    className="border p-2 rounded w-full"
-                  />
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <input type="date" className="border p-2 rounded w-full" />
-                  <input type="time" className="border p-2 rounded w-full" />
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <input
-                    type="text"
-                    placeholder="Doctor"
-                    className="border p-2 rounded w-full"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Department"
-                    className="border p-2 rounded w-full"
-                  />
-                </div>
-                <textarea
-                  placeholder="Message"
-                  className="border p-2 rounded w-full mb-4"
-                  rows="4"
-                ></textarea>
-                <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 w-full">
-                  Submit
-                </button>
-              </form>
-            </div>
-
-            {/* Schedule Section */}
-            <div className="bg-blue-700 text-white p-6 shadow-lg rounded-lg">
-              <h2 className="text-xl font-bold mb-6">Schedule Hours</h2>
-              <ul className="space-y-4">
-                <li className="flex justify-between">
-                  <span>Monday</span>
-                  <span>08:00 AM - 07:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Tuesday</span>
-                  <span>08:00 AM - 07:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Wednesday</span>
-                  <span>08:00 AM - 07:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Thursday</span>
-                  <span>08:00 AM - 07:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Friday</span>
-                  <span>08:00 AM - 07:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Saturday</span>
-                  <span>08:00 AM - 07:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Sunday</span>
-                  <span>Closed</span>
-                </li>
-              </ul>
-              <div className="mt-6">
-                <h3 className="text-lg font-bold">Emergency</h3>
-                <p className="text-sm">Call: (237) 681-812-255</p>
-              </div>
-            </div>
+            <ContactForm />
+            <ContactFormNew />
           </div>
 
           {/* Map Section */}
