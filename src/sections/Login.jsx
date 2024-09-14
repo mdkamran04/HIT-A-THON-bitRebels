@@ -3,7 +3,7 @@ import MaxWidthContainer from "../components/mmw";
 
 const Login = () => {
   return (
-    <section className="bg-hero-pattern">
+    <section className="bg-hero-pattern py-10">
       <MaxWidthContainer>
         <div className="min-h-screen flex flex-col md:flex-row">
           {/* Left Side - Login Form */}
@@ -81,16 +81,16 @@ const Login = () => {
           </div>
 
           {/* Right Side - Image and Text */}
-          <div className="w-full md:w-1/2 hidden md:flex items-center justify-center relative bg-hero-pattern rounded-r-xl">
+          <div className="w-full md:w-1/2 hidden md:flex items-center justify-center relative bg-hero-pattern-dark rounded-r-xl">
             <div className="text-white text-center p-8">
+              <h2 className="mt-6 text-2xl md:text-3xl font-semibold text-left pl-28">
+                Access to Care, <br /> Anywhere You Are
+              </h2>
               <img
                 src="img/avatar.png"
                 alt="Doctor Illustration"
-                className="h-64 mx-auto"
+                className="h-full mx-auto"
               />
-              <h2 className="mt-6 text-2xl md:text-3xl font-semibold">
-                Access to Care, Anywhere You Are
-              </h2>
             </div>
           </div>
         </div>

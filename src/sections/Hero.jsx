@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import MaxWidthContainer from "../components/mmw"; // Adjust the path according to your file structure
 
 const Hero = () => {
@@ -24,8 +25,8 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4 md:gap-6 mt-8">
             {/* Button 1 */}
-            <a
-              href="#"
+            <Link
+              to='/login'
               className="bg-blue-800 text-white px-6 py-3 rounded-xl flex items-center space-x-2 hover:bg-blue-700 transition"
             >
               <span>Book an Appointment</span>
@@ -34,11 +35,11 @@ const Hero = () => {
                 alt="Calendar Icon"
                 className="h-6 w-6"
               />
-            </a>
+            </Link>
 
             {/* Button 2 */}
-            <a
-              href="#"
+            <Link
+              to='/login'
               className="bg-blue-300 text-blue-800 px-6 py-3 rounded-xl flex items-center space-x-2 hover:bg-blue-200 transition"
             >
               <span>Book an Appointment</span>
@@ -47,11 +48,11 @@ const Hero = () => {
                 alt="People Icon"
                 className="h-6 w-6"
               />
-            </a>
+            </Link>
 
             {/* Button 3 */}
-            <a
-              href="#"
+            <Link
+              to='/login'
               className="bg-blue-800 text-white px-6 py-3 rounded-xl flex items-center space-x-2 hover:bg-blue-700 transition"
             >
               <span>Book an Appointment</span>
@@ -60,7 +61,7 @@ const Hero = () => {
                 alt="Payment Icon"
                 className="h-6 w-6"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </MaxWidthContainer>
