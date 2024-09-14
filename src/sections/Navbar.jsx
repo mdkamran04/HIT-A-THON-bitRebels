@@ -1,62 +1,39 @@
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Array for Navbar links
+  const navLinks = [
+    { path: "/", name: "Home" },
+    { path: "/about", name: "About Us" },
+    { path: "/services", name: "Services" },
+    { path: "/doctors", name: "Doctors" },
+    { path: "/news", name: "News" },
+    { path: "/contact", name: "Contact" },
+    { path: "/login", name: "Login" },
+  ];
+
   return (
     <nav className="bg-main-colour">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo and Navigation Links */}
-          <div className="flex items-center w-full justify-between md:justify-start">
-            {/* Logo */}
-            <div className="flex-shrink-0 text-white text-xl font-bold">
-            </div>
-
-            {/* Desktop Menu */}
-            <div className="hidden md:flex md:ml-10 md:space-x-4">
-              <a
-                href="#"
+          {/* Desktop Menu */}
+          <div className="hidden md:flex md:ml-10 md:space-x-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.path}
                 className="text-white hover:underline px-3 py-2 rounded-md text-sm font-medium"
               >
-                Home
-              </a>
-              <a
-                href="#"
-                className="text-white hover:underline px-3 py-2 rounded-md text-sm font-medium"
-              >
-                About Us
-              </a>
-              <a
-                href="#"
-                className="text-white hover:underline px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Services
-              </a>
-              <a
-                href="#"
-                className="text-white hover:underline px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Doctors
-              </a>
-              <a
-                href="#"
-                className="text-white hover:underline px-3 py-2 rounded-md text-sm font-medium"
-              >
-                News
-              </a>
-              <a
-                href="#"
-                className="text-white hover:underline px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Contact
-              </a>
-            </div>
+                {link.name}
+              </Link>
+            ))}
           </div>
 
-          {/* Actions */}
+          {/* Search Icon and Appointment Button */}
           <div className="hidden md:flex md:items-center">
-            {/* Search Icon */}
             <a
               href="#"
               className="text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -105,7 +82,9 @@ const Navbar = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+                  d={
+                    isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+                  }
                 />
               </svg>
             </button>
@@ -116,42 +95,15 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a
-            href="#"
-            className="text-white hover:underline block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="text-white hover:underline block px-3 py-2 rounded-md text-base font-medium"
-          >
-            About Us
-          </a>
-          <a
-            href="#"
-            className="text-white hover:underline block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Services
-          </a>
-          <a
-            href="#"
-            className="text-white hover:underline block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Doctors
-          </a>
-          <a
-            href="#"
-            className="text-white hover:underline block px-3 py-2 rounded-md text-base font-medium"
-          >
-            News
-          </a>
-          <a
-            href="#"
-            className="text-white hover:underline block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Contact
-          </a>
+          {navLinks.map((link) => (
+            <Link
+              key={link.name}
+              to={link.path}
+              className="text-white hover:underline block px-3 py-2 rounded-md text-base font-medium"
+            >
+              {link.name}
+            </Link>
+          ))}
         </div>
       </div>
     </nav>

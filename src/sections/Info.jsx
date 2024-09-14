@@ -13,7 +13,7 @@ const Info = () => {
               alt="MediBridge Logo"
               className="h-12 lg:h-16 w-auto"
             />
-            <h1 className="text-lg lg:text-2xl font-bold text-blue-600">
+            <h1 className="text-lg lg:text-2xl font-bold text-blue-600 font-serif">
               MediBridge
             </h1>
           </div>
