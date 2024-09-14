@@ -6,7 +6,6 @@ const Info = () => {
     <MaxWidthContainer>
       <div className="bg-white py-4 border-b border-gray-200">
         <div className="flex flex-col lg:flex-row items-center justify-between mx-auto">
-          
           {/* Logo */}
           <div className="flex items-center space-x-2 mb-4 lg:mb-0">
             <img
@@ -22,7 +21,11 @@ const Info = () => {
           {/* Contact Info */}
           <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8">
             <div className="flex items-center space-x-2">
-              <img src="/icons/call.svg" alt="Emergency" className="h-5 lg:h-6 w-auto" />
+              <img
+                src="/icons/call.svg"
+                alt="Emergency"
+                className="h-5 lg:h-6 w-auto"
+              />
               <div>
                 <p className="text-xs lg:text-sm text-gray-500">EMERGENCY</p>
                 <p className="font-semibold text-blue-600">
@@ -32,7 +35,11 @@ const Info = () => {
             </div>
 
             <div className="flex items-center space-x-2">
-              <img src="/icons/time.svg" alt="Work Hour" className="h-5 lg:h-6 w-auto" />
+              <img
+                src="/icons/time.svg"
+                alt="Work Hour"
+                className="h-5 lg:h-6 w-auto"
+              />
               <div>
                 <p className="text-xs lg:text-sm text-gray-500">WORK HOUR</p>
                 <p className="font-semibold text-blue-600">
@@ -42,7 +49,11 @@ const Info = () => {
             </div>
 
             <div className="flex items-center space-x-2">
-              <img src="/icons/gps.svg" alt="Location" className="h-5 lg:h-6 w-auto" />
+              <img
+                src="/icons/gps.svg"
+                alt="Location"
+                className="h-5 lg:h-6 w-auto"
+              />
               <div>
                 <p className="text-xs lg:text-sm text-gray-500">LOCATION</p>
                 <p className="font-semibold text-blue-600">0123 Some Place</p>
