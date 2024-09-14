@@ -3,7 +3,7 @@ import MaxWidthContainer from "../components/mmw"; // Adjust the path based on y
 
 const LoginOptions = () => {
   return (
-    <section className="bg-hero-pattern py-16 px-4 md:px-16 h-full relative">
+    <section className=" py-16 px-4 md:px-16 h-full relative">
       <MaxWidthContainer>
         {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

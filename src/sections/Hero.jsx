@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import MaxWidthContainer from "../components/mmw"; // Adjust the path according to your file structure
+import LoginOptions from "./LoginOption";
 
 const Hero = () => {
   return (
@@ -64,6 +65,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
+        <LoginOptions />
       </MaxWidthContainer>
     </section>
   );
