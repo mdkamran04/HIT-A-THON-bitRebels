@@ -1,5 +1,6 @@
 import React from "react";
 import MaxWidthContainer from "../components/mmw";
+import { Link } from "react-router-dom";
 
 const doctors = [
   {
@@ -92,7 +93,7 @@ const Doctor = () => {
                       ))}
                     </p>
                     <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300">
-                      Book Appointment
+                      <Link to="/login">Book Appointment</Link>
                     </button>
                   </div>
                 </div>

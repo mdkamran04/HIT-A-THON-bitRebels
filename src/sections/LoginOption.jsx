@@ -30,12 +30,12 @@ const LoginOptions = () => {
             </button>
           </div>
 
-          {/* Avatar */}
-          <div className="flex justify-center items-center">
+          {/* Avatar Image */}
+          <div className="flex justify-center items-center mt-8 md:mt-0">
             <img
-              className="w-full h-auto max-w-xs md:max-w-full"
+              className="w-full h-auto max-w-xs md:max-w-md"
               src="/img/both.png"
-              alt="Doctor Avatar"
+              alt="Doctor and Patient Avatar"
             />
           </div>
         </div>

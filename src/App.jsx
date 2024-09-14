@@ -27,6 +27,7 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/login-options" element={<LoginOptions />} />
         </Routes>
+        <LoginOptions />
         <Footer />
       </div>
     </Router>
