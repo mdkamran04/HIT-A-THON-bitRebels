@@ -72,7 +72,7 @@ const Footer = () => {
 
           {/* Bottom part of the footer */}
           <div className="mt-8 border-t border-blue-700 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
-            <p>© 2021 MediBridge All Rights Reserved by knhs</p>
+            <p>© 2024 MediBridge All Rights Reserved by BitRebels</p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <a href="#" className="hover:text-gray-300">
                 <FaLinkedin size={24} />
