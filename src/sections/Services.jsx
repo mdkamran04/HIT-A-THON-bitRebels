@@ -2,11 +2,10 @@ import React from 'react';
 
 const Services = () => {
   return (
-    <div className="bg-white py-16 px-8">
+    <div className="bg-white py-8 md:py-16 px-4 md:px-8 lg:px-12">
       {/* Service Banner */}
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-semibold text-blue-900">Free Checkup</h1>
-        
+      <div className="text-center mb-8 md:mb-12">
+        <h1 className="text-3xl md:text-4xl font-semibold text-blue-900">Free Checkup</h1>
       </div>
 
       {/* Service Details Section */}
@@ -48,14 +47,14 @@ const Services = () => {
           <img
             src="img/servicesimg.png"
             alt="Free Checkup"
-            className="w-full h-72 object-cover rounded-lg mb-6"
+            className="w-full h-64 md:h-72 object-cover rounded-lg mb-6"
           />
 
           {/* Service Description */}
-          <h2 className="text-2xl font-bold text-blue-700 mb-4">
+          <h2 className="text-xl md:text-2xl font-bold text-blue-700 mb-4">
             A passion for putting patients first
           </h2>
-          <ul className="flex items-center space-x-4 mb-6">
+          <ul className="flex flex-wrap items-center space-x-4 mb-6">
             <li className="flex items-center text-blue-600 space-x-2">
               <span>✔️</span>
               <span>A Passion for Healing</span>
@@ -87,17 +86,17 @@ const Services = () => {
       </div>
 
       {/* Team Members Section */}
-      <div className="mt-16 text-center">
-        <h2 className="text-3xl font-bold text-blue-700 mb-8">Meet the Team Members</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="mt-12 md:mt-16 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-blue-700 mb-8">Meet the Team Members</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Team Member Card */}
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <img
               src="img/doctor1.png"
               alt="Doctor"
-              className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
+              className="w-24 h-24 md:w-32 md:h-32 object-cover rounded-full mx-auto mb-4"
             />
-            <h3 className="text-xl font-semibold text-blue-800">Dr. Emma Healy</h3>
+            <h3 className="text-lg md:text-xl font-semibold text-blue-800">Dr. Emma Healy</h3>
             <p className="text-gray-500">Cardiology</p>
             <button className="mt-4 py-2 px-6 bg-blue-600 text-white rounded-md hover:bg-blue-700">
               View Profile
@@ -109,9 +108,9 @@ const Services = () => {
             <img
               src="img/doctor2.png"
               alt="Doctor"
-              className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
+              className="w-24 h-24 md:w-32 md:h-32 object-cover rounded-full mx-auto mb-4"
             />
-            <h3 className="text-xl font-semibold text-blue-800">Dr. Jane Smith</h3>
+            <h3 className="text-lg md:text-xl font-semibold text-blue-800">Dr. Jane Smith</h3>
             <p className="text-gray-500">Orthopedics</p>
             <button className="mt-4 py-2 px-6 bg-blue-600 text-white rounded-md hover:bg-blue-700">
               View Profile
@@ -123,9 +122,9 @@ const Services = () => {
             <img
               src="img/doctor3.png"
               alt="Doctor"
-              className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
+              className="w-24 h-24 md:w-32 md:h-32 object-cover rounded-full mx-auto mb-4"
             />
-            <h3 className="text-xl font-semibold text-blue-800">Dr. Emily Clark</h3>
+            <h3 className="text-lg md:text-xl font-semibold text-blue-800">Dr. Emily Clark</h3>
             <p className="text-gray-500">Gynecology</p>
             <button className="mt-4 py-2 px-6 bg-blue-600 text-white rounded-md hover:bg-blue-700">
               View Profile
