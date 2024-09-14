@@ -2,10 +2,10 @@ import React from 'react';
 
 const Login = () => {
   return (
-    <div className="min-h-screen flex bg-hero-pattern">
+    <div className="min-h-screen flex flex-col md:flex-row bg-hero-pattern">
       {/* Left Side - Login Form */}
       <div className="w-full md:w-1/2 flex items-center justify-center bg-white">
-        <div className="max-w-md w-full space-y-8 p-10">
+        <div className="max-w-md w-full space-y-8 p-6 md:p-10">
           <h2 className="text-center text-3xl font-bold text-gray-900">LOGIN</h2>
           <form className="mt-8 space-y-6">
             {/* Username Input */}
@@ -48,15 +48,13 @@ const Login = () => {
             {/* Login with Others */}
             <div className="mt-6">
               <p className="text-center text-gray-500">Login with Others</p>
-              <div className="flex items-center justify-center space-x-4 mt-4">
+              <div className="flex flex-col items-center space-y-4 mt-4">
                 <button
                   className="w-full py-2 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center rounded-md"
                 >
                   <img src="icons/google.png" alt="Google" className="h-5 mr-2" />
                   Login with Google
                 </button>
-              </div>
-              <div className="flex items-center justify-center space-x-4 mt-4">
                 <button
                   className="w-full py-2 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center rounded-md"
                 >
@@ -77,7 +75,7 @@ const Login = () => {
             alt="Doctor Illustration"
             className="h-64 mx-auto"
           />
-          <h2 className="mt-6 text-3xl font-semibold">Access to Care, Anywhere You Are</h2>
+          <h2 className="mt-6 text-2xl md:text-3xl font-semibold">Access to Care, Anywhere You Are</h2>
         </div>
       </div>
     </div>
