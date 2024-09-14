@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ### MediBridge: Where Innovation Bridges Healthcare Gaps!
 # Figma Prototype - https://www.figma.com/design/g7rH9lq1ldilQvo8AWYXCc/MEDIN-Hospital-system-(Community)?node-id=147-1780&m=dev&t=ba3YnVansHXSuuBj-1
 ## Team Name:- Bit Rebels
@@ -24,12 +24,5 @@ Special thanks to Taruguardians for organizing the HIT-A-THON and providing an e
 Google Drive Link For the Idea Presentation:- https://drive.google.com/file/d/1oCrQ49WWSxczBzagBX_ayoK5STZVDitd/view?usp=sharing
 
 =======
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> 6f78e5c (Hello)
