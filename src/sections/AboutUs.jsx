@@ -40,8 +40,9 @@ const doctors = [
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-gray-50 relative">
-      <div className="bg-hero-pattern-dark h-32 flex justify-center items-center">
-        <h2 className="text-2xl md:text-6xl font-bold text-other-colour font-serif">
+      <div className="bg-hero-pattern h-32 flex justify-start items-center">
+        <img src="/icons/logo.png" className="h-100 w-auto" />
+        <h2 className="text-2xl md:text-6xl font-bold text-main-colour font-serif">
           About Us
         </h2>
       </div>
@@ -89,7 +90,9 @@ const AboutUs = () => {
                   className="h-full w-full mx-auto"
                 />
                 <div className="bg-other-colour">
-                  <h4 className="mt-0 text-lg font-semibold text-text-colour">{doctor.name}</h4>
+                  <h4 className="mt-0 text-lg font-semibold text-text-colour">
+                    {doctor.name}
+                  </h4>
                   <p className="text-text-colour font-bold">
                     {doctor.specialization}
                   </p>
