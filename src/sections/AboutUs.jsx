@@ -1,103 +1,128 @@
 import React from "react";
 import Contact from "../components/Contact";
+import MaxWidthContainer from "../components/mmw";
+import Search from "../components/Search";
+
+// Array containing doctor data
+const doctors = [
+  {
+    name: "Dr. Ankita Singh",
+    specialization: "DERMATOLOGIST",
+    image: "img/doctor1.png",
+    socialLinks: {
+      linkedin: "#",
+      facebook: "#",
+      instagram: "#",
+    },
+  },
+  {
+    name: "Dr. Aditya Sharma",
+    specialization: "ORTHOPEDIST",
+    image: "img/doctor2.png",
+    socialLinks: {
+      linkedin: "#",
+      facebook: "#",
+      instagram: "#",
+    },
+  },
+  {
+    name: "Dr. Naina Talwar",
+    specialization: "GYNECOLOGIST",
+    image: "img/doctor3.png",
+    socialLinks: {
+      linkedin: "#",
+      facebook: "#",
+      instagram: "#",
+    },
+  },
+];
 
 const AboutUs = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* About Us Section */}
-      <section className="py-8 md:py-16 px-4 md:px-8 bg-white text-center">
-        <h2 className="text-2xl md:text-4xl font-bold text-blue-700">
+    <div className="min-h-screen bg-gray-50 relative">
+      <div className="bg-hero-pattern-dark h-32 flex justify-center items-center">
+        <h2 className="text-2xl md:text-6xl font-bold text-other-colour font-serif">
           About Us
         </h2>
-        <p className="mt-6 text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
-          MediBridge is a centralized platform that connects clinics with
-          patients, streamlining the process of patient management and doctor
-          appointments. By bridging the gap between healthcare providers and
-          patients, it offers a seamless solution for booking appointments,
-          enhancing communication, and improving healthcare access.
-        </p>
-        <p className="mt-4 text-lg md:text-xl text-blue-800 font-semibold">
-          Bridging Care, Building Trust.
-        </p>
-      </section>
+      </div>
 
-      {/* Doctor Image */}
-      <section className="flex justify-center mt-6 md:mt-10">
-        <img
-          src="img/avatar.png"
-          alt="Doctor Illustration"
-          className="h-40 md:h-80"
-        />
-      </section>
-
-      {/* Clinics Section */}
-      <section className="py-8 md:py-16 px-4 md:px-8 bg-gray-100 text-center">
-        <h3 className="text-2xl md:text-3xl font-bold text-blue-700">
-          Find Clinics Near You
-        </h3>
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {/* Clinic Card 1 */}
-          <div className="bg-white p-4 md:p-6 rounded-lg shadow-md">
-            <img
-              src="img/doctor1.png"
-              alt="Dr. Anika Singh"
-              className="h-24 w-24 md:h-32 md:w-32 mx-auto rounded-full"
-            />
-            <h4 className="mt-4 text-lg md:text-xl font-semibold">
-              Dr. Anika Singh
-            </h4>
-            <p className="text-gray-600">Cardiology</p>
+      {/* About Us Section */}
+      <MaxWidthContainer>
+        <section className="py-0 md:py-0 px-4 md:px-0 bg-white text-center">
+          <div className="grid grid-cols-2 grid-rows-2 items-center justify-center">
+            <div className="row-span-2">
+              {/* Doctor Image */}
+              <img
+                src="img/avatar.png"
+                alt="Doctor Illustration"
+                className="h-full md:h-full z-10"
+              />
+            </div>
+            <div>
+              <p className="mt-6 text-base text-left md:text-2xl text-text-colour font-serif max-w-3xl mx-auto">
+                MediBridge is a centralized platform that connects clinics with
+                patients, streamlining the process of patient management and
+                doctor appointments. By bridging the gap between healthcare
+                providers and patients, it offers a seamless solution for
+                booking appointments, enhancing communication, and improving
+                healthcare access.
+              </p>
+            </div>
           </div>
+        </section>
 
-          {/* Clinic Card 2 */}
-          <div className="bg-white p-4 md:p-6 rounded-lg shadow-md">
-            <img
-              src="img/doctor2.png"
-              alt="Dr. Rahul Sharma"
-              className="h-24 w-24 md:h-32 md:w-32 mx-auto rounded-full"
-            />
-            <h4 className="mt-4 text-lg md:text-xl font-semibold">
-              Dr. Rahul Sharma
-            </h4>
-            <p className="text-gray-600">Orthopedic</p>
+        {/* Doctor Name Cards Section */}
+        <section className="py-8 md:py-16 px-4 md:px-8 bg-gray-100 text-center">
+          <h3 className="text-2xl md:text-xl font-bold text-text-colour mb-1">
+            TRUSTED CARE
+          </h3>
+          <h2 className="font-serif text-3xl mb-8 text-text-colour">
+            Find Clinics Near You
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {/* Mapping through doctors array */}
+            {doctors.map((doctor, index) => (
+              <div key={index}>
+                <img
+                  src={doctor.image}
+                  alt={doctor.name}
+                  className="h-full w-full mx-auto"
+                />
+                <div className="bg-other-colour">
+                  <h4 className="mt-0 text-lg font-semibold text-text-colour">{doctor.name}</h4>
+                  <p className="text-text-colour font-bold">
+                    {doctor.specialization}
+                  </p>
+                  <div className="flex justify-center space-x-4 mt-4">
+                    <a
+                      href={doctor.socialLinks.linkedin}
+                      className="text-blue-600"
+                    >
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                    <a
+                      href={doctor.socialLinks.facebook}
+                      className="text-blue-600"
+                    >
+                      <i className="fab fa-facebook"></i>
+                    </a>
+                    <a
+                      href={doctor.socialLinks.instagram}
+                      className="text-blue-600"
+                    >
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                  </div>
+                  <button className="mt-4 py-2 px-6 w-full bg-main-colour text-white ">
+                    View Profile
+                  </button>
+                </div>
+              </div>
+            ))}
           </div>
-
-          {/* Clinic Card 3 */}
-          <div className="bg-white p-4 md:p-6 rounded-lg shadow-md">
-            <img
-              src="img/doctor3.png"
-              alt="Dr. Simran Verma"
-              className="h-24 w-24 md:h-32 md:w-32 mx-auto rounded-full"
-            />
-            <h4 className="mt-4 text-lg md:text-xl font-semibold">
-              Dr. Simran Verma
-            </h4>
-            <p className="text-gray-600">Gynecology</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Search and Contact Section */}
-      <section className="py-8 md:py-16 px-4 md:px-8 bg-hero-pattern-dark text-center text-white">
-        <h3 className="text-xl md:text-2xl font-bold">
-          Better Information, Better Health
-        </h3>
-        <div className="mt-8 flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
-          <input
-            type="text"
-            placeholder="Location"
-            className="px-4 py-2 rounded-lg focus:outline-none text-gray-800"
-          />
-          <input
-            type="text"
-            placeholder="Specialty"
-            className="px-4 py-2 rounded-lg focus:outline-none text-gray-800"
-          />
-          <button className="bg-white text-blue-800 px-6 py-2 rounded-lg">
-            Search
-          </button>
-        </div>
-      </section>
+        </section>
+      </MaxWidthContainer>
+      <Search />
       <Contact />
     </div>
   );
