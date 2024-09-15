@@ -68,7 +68,7 @@ const ContactUs = () => {
                 </div>
                 <div className="mb-4">
                   <label className="block mb-2 text-sm font-medium text-gray-700">Message</label>
-                  <textarea className="w-full border border-gray-300 rounded-md p-2"></textarea>
+                  <textarea className="w-full border border-gray-300 rounded-md p-2 resize-none "></textarea>
                 </div>
                 <button className="bg-blue-600 text-white px-4 py-2 rounded-md w-full">Submit</button>
               </form>
