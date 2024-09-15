@@ -25,7 +25,7 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className="text-white hover:underline px-3 py-2 rounded-md text-sm font-medium"
+                className="text-white hover:underline px-3 py-2 rounded-md text-xl font-medium"
               >
                 {link.name}
               </Link>
